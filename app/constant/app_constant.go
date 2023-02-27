@@ -8,9 +8,9 @@ type General int
 const (
 	Success ResponseStatus = iota + 1
 	DataNotFound
-	UknownError
+	UnkownError
 	InvalidRequest
-	unauthorized
+	Unauthorized
 )
 
 func (r ResponseStatus) GetResponseStatus() string {
